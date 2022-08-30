@@ -1,0 +1,61 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:just_training_app/screens/screens.dart';
+
+ class AuthButtonWidget extends StatefulWidget {
+   const AuthButtonWidget({Key? key,
+     required this.title,
+     required this.titleColour,
+     required this.buttonColour,
+     required this.onPressed
+   }) : super(key: key);
+
+   final String title;
+   final Color buttonColour;
+   final Color titleColour;
+   final Function()? onPressed;
+
+   @override
+   State<AuthButtonWidget> createState() => _AuthButtonWidgetState();
+ }
+
+ class _AuthButtonWidgetState extends State<AuthButtonWidget> {
+   @override
+   Widget build(BuildContext context) {
+     return Container(
+       decoration: BoxDecoration(
+         borderRadius: BorderRadius.circular(20),
+         boxShadow: [
+           BoxShadow(
+             color: Colors.grey.withOpacity(0.5),
+             spreadRadius: 1,
+             blurRadius: 1,
+             offset: const Offset(0, 0), // changes position of shadow
+           ),
+         ],
+       ),
+       height: 53,
+       width: double.infinity,
+       child: ElevatedButton(
+         style: ButtonStyle(
+           backgroundColor: MaterialStateProperty.all(widget.buttonColour),
+           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+             RoundedRectangleBorder(
+               borderRadius: BorderRadius.circular(20.0),
+             ),
+           ),
+         ),
+         onPressed: widget.onPressed,
+         child: Text(
+           widget.title,
+           style: TextStyle(
+             color: widget.titleColour,
+             fontSize: 16,
+             fontWeight: FontWeight.w600,
+           ),
+         ),
+       ),
+     );
+   }
+ }
+

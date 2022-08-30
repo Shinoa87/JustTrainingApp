@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "735847294936",
+    "project_id": "brandnewmobyteapp",
+    "storage_bucket": "brandnewmobyteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735847294936:android:f953c076f30ead1b00f4ad",
+        "android_client_info": {
+          "package_name": "com.AntonSh.just_training_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735847294936-8fkb28puuj80bh5ud0b67dp3cnjbakpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJC1Ez1QAzZUkMXdZZ-6xLDvGJ3382ZVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735847294936-8fkb28puuj80bh5ud0b67dp3cnjbakpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
